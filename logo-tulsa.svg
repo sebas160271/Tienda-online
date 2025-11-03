@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2048" height="2048" viewBox="0 0 2048 2048" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tulsa logo">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0" stop-color="#ff4da6"/>
+      <stop offset="1" stop-color="#ff94c7"/>
+    </linearGradient>
+    <filter id="f1" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="20" stdDeviation="40" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#0f0f10" rx="120"/>
+  <g transform="translate(200,320)" filter="url(#f1)">
+    <!-- abstract icon: T + geometric swoosh -->
+    <g transform="translate(0,0) scale(1.0)">
+      <path d="M320 0 L640 0 L640 80 L520 80 L520 592 L400 592 L400 80 L320 80 Z" fill="url(#g1)"/>
+      <path d="M180 320 C260 120 520 80 620 320 C700 520 420 720 220 680 C140 660 120 480 180 320 Z" fill="#111214" opacity="0.85"/>
+      <circle cx="460" cy="420" r="40" fill="#fff" opacity="0.12"/>
+    </g>
+
+    <!-- Texto Tulsa -->
+    <g transform="translate(720,80)">
+      <text x="0" y="220" font-family="Montserrat, Arial, sans-serif" font-weight="700" font-size="220" fill="#fff">Tulsa</text>
+      <text x="0" y="360" font-family="Inter, Arial, sans-serif" font-size="64" fill="#bfbfbf">estilo • actitud • diseño</text>
+    </g>
+  </g>
+</svg>
