@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tulsa — Tienda</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="logo-tulsa.svg" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <!-- Inline SVG fallback: you can replace with <img src="logo-tulsa.svg"> -->
+      <img src="logo-tulsa.svg" alt="Tulsa logo" class="logo-img" />
+      <h1 class="sr-only">Tulsa</h1>
+    </div>
+
+    <nav class="main-nav">
+      <button id="themeToggle" class="icon-btn" aria-label="Cambiar tema">🌓</button>
+      <button id="openCart" class="cart-btn" aria-label="Abrir carrito">
+        🛒 <span id="cartCount" class="cart-count">0</span>
+      </button>
+      <button class="cta">Contacto</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <h2>Tulsa — Estilo que conecta</h2>
+        <p>Ropa, accesorios y tecnología seleccionada para un estilo juvenil y moderno.</p>
+        <a href="#gallery" class="btn-primary">Visitar tienda</a>
+      </div>
+      <div class="hero-art"></div>
+    </section>
+
+    <section id="gallery" class="products-section">
+      <header class="section-header">
+        <h3>Galería de productos</h3>
+        <p>Explora nuestra selección — diseños exclusivos y ofertas limitadas.</p>
+      </header>
+
+      <div id="productsGrid" class="products-grid">
+        <!-- Las tarjetas se generan desde script.js -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Mini carrito (modal lateral) -->
+  <aside id="cartDrawer" class="cart-drawer" aria-hidden="true">
+    <div class="cart-header">
+      <h4>Tu carrito</h4>
+      <button id="closeCart" class="icon-btn" aria-label="Cerrar carrito">✕</button>
+    </div>
+    <div id="cartItems" class="cart-items">
+      <p class="muted">Aún no agregaste productos.</p>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">Total: <strong id="cartTotal">$0.00</strong></div>
+      <button id="clearCart" class="btn-ghost">Vaciar carrito</button>
+      <button id="checkout" class="btn-primary">Continuar (simulado)</button>
+    </div>
+  </aside>
+
+  <!-- Notificación breve -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
